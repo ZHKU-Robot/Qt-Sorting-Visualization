@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>箭头.svg</file>
+        <file>箭头2.svg</file>
+        <file>关 闭.svg</file>
+        <file>最大化.svg</file>
+        <file>最小化.svg</file>
+        <file>最小化终极不改.svg</file>
+        <file>箭头3.svg</file>
+        <file>哨兵_2.svg</file>
+    </qresource>
+</RCC>
