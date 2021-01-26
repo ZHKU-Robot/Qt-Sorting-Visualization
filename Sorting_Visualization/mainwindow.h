@@ -64,7 +64,8 @@ public:
         BUBBLE_SORTING,
         INSERT_SORTING,
         BUBBLE_EX_SORTING,
-        INSERT_EX_SORTING
+        INSERT_EX_SORTING,
+        QUICK_SORTING,
 
     };
 
@@ -84,6 +85,7 @@ public:
     void initArrowLabel(QLabel *l,QGraphicsProxyWidget *arrow,QPixmap pix);
     void initNumLabel(QString text,QString style,QPointF pos,QGraphicsProxyWidget *labelNum);
 
+    void arrowPosSet();
     void removeItemsCopy();
     void removeItems();
 
@@ -95,6 +97,8 @@ public:
     void bubbleSortingEx();
     void insertSorting();
     void insertSortingEx();
+    void quickSorting(int low, int high);
+    int partition(int low, int high);
     void widgetSwapAni(QGraphicsProxyWidget *w,RectProxyWidget *w2,bool wait);
 
     void initWidget();

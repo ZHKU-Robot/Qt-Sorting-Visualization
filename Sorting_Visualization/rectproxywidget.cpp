@@ -13,8 +13,7 @@ RectProxyWidget::RectProxyWidget(const RectProxyWidget *other)
     Item *it =new Item(other->item);
     new(this) RectProxyWidget(it);
     setGeometry(other->geometry());
-    this->id=other->id;
-    this->value=other->value;
+
 }
 
 RectProxyWidget::~RectProxyWidget()
@@ -22,23 +21,3 @@ RectProxyWidget::~RectProxyWidget()
 
 }
 
-int RectProxyWidget::getId() const
-{
-    return id;
-}
-
-void RectProxyWidget::setId(int value)
-{
-    id = value;
-}
-
-int RectProxyWidget::getValue() const
-{
-    return value;
-}
-
-void RectProxyWidget::setValue(int value)
-{
-    this->value = value;
-
-}

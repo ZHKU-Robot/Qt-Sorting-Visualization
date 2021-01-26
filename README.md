@@ -25,7 +25,7 @@ qt 做的一个 排序可视化 小程序
 - [使用许可](#使用许可)
 
 ## 更新
-
+- 2021年1月26日15:43:06 更新快排，修复一些可能崩溃的原因
 - 相关介绍会放到公众号上
 - 2021年1月26日00:26:03 第一版demo 已上线  在这里下载后可以直接游玩 [release](build-Sorting_Visualization-Desktop_Qt_5_9_6_MinGW_32bit-Release/release) 
 - 2021年1月26日00:25:14 update readme.md

@@ -11,14 +11,7 @@ public:
     RectProxyWidget(Item *item,QGraphicsItem *parent = Q_NULLPTR, Qt::WindowFlags wFlags = Qt::WindowFlags());
     RectProxyWidget(const RectProxyWidget *other);
     ~RectProxyWidget();
-    int id;
-    int value;
     Item *item;
-
-    int getValue() const;
-    void setValue(int value);
-    int getId() const;
-    void setId(int value);
 };
 
 #endif // RECTPROXYWIDGET_H

@@ -667,7 +667,6 @@ int MainWindow::partition(int low, int high)
     static_cast<QLabel*>(labelNumGuard->widget())->adjustSize();
 
     widgetSwapAni(arrowLabelGuard,rectProxyItems[guardPos],1);
-
         while(low < high){                  //从表的两端交替地向中间扫描
 
             if(smallToLarge){
@@ -762,12 +761,7 @@ int MainWindow::partition(int low, int high)
 
         }
 
-
-
-
     return low;
-
-
 }
 
 

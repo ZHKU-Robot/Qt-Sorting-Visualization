@@ -97,7 +97,6 @@ void Item::paintEvent(QPaintEvent *event)
     int gradiant2=(2-standard * 1.0 / threshold)* gradiantGMax;
 
     gradiant=(gradiantRMax>gradiant?gradiant:gradiantRMax )*brightness ;
-
     gradiant2=gradiantGMax>gradiant2?gradiant2:gradiantGMax;
     gradiant2=(0<gradiant2?gradiant2:0)*brightness;
 
@@ -117,10 +116,6 @@ void Item::paintEvent(QPaintEvent *event)
 
     painter.drawText(QRect(0,0,width(),height()), Qt::AlignCenter,"value:"+QString::number(value));
     painter.drawText(QRect(0,0,width(),height()/2), Qt::AlignCenter,"pos:"+QString::number(id));
-
-//    painter.drawRect();
-//    255, ($x * 1.0 / $threshold * 255)) * $brightness
-
 
     QWidget::paintEvent(event);
 }

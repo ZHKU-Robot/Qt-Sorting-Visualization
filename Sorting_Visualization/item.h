@@ -21,11 +21,10 @@ public:
     static int threshold;
     int standard;
     int brightness=1;
-
     int gradiantRMax=255,gradiantGMax=255,gradiantBMax=10;
+
     Ui::Item *ui;
 
-void paintEvent(QPaintEvent *event);
 
 
 
@@ -44,7 +43,8 @@ void setId(int value);
 
 int getValue() const;
 void setValue(int value);
-
+protected:
+    void paintEvent(QPaintEvent *event);
 private:
 
 };
